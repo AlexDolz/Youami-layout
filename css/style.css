@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --color-1: #303297;
+  --color-2: #ff4d4f;
+  --color-3: #303297;
+  --color-4: #2a79ff;
+  --color-5: #29272b;
+  --color-6: #ffffff;
+  --main-bg: #2d273d;
+}
+body {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* ! block, widt/height == 20vw */
+.container {
+  width: 60vw;
+  height: 40vw;
+}
+.block {
+  width: calc(100% / 3);
+  height: calc(100% / 2);
+  color: #fff;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.block:nth-child(1) {
+  background-color: var(--color-1);
+}
+.block:nth-child(2) {
+  background-color: var(--color-2);
+}
+.block:nth-child(3) {
+  background-color: var(--color-3);
+}
+.block:nth-child(4) {
+  background-color: var(--color-4);
+}
+.block:nth-child(5) {
+  background-color: var(--color-5);
+}
+.block:nth-child(6) {
+  background-color: var(--color-6);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  /* ! lucse postavit baseline tak kak srift raznij */
+  align-items: center;
+}
+.block {
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.logo {
+  font-weight: 600;
+  padding-left: 4px;
+  font-size: 13px;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.text {
+  font-weight: 400;
+  color: #ddddddcc;
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.is-upper {
+  text-transform: uppercase;
+}
+.title {
+  margin: 8px 0;
+  font-weight: 600;
+  font-size: 28px;
+}
+iconify {
+  padding-top: 5px;
+}
+.smile {
+  color: #ff0000;
+  font-size: 13px;
+  padding-top: 3px;
+}
+.smile-white {
+  color: white;
+}
+.iconify {
+  vertical-align: text-top;
+}
+.img-invert {
+  filter: invert(15%) sepia(47%) saturate(7118) hue-rotate(218deg)
+    brightness(102%) contrast(110%);
+}
+.img-gray {
+  filter: invert(50%);
+}
+.img-sushi {
+  width: 100px;
+  height: 100px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.logo-black {
+  color: black;
+}
+.gray-text {
+  color: gray;
+}
+.title-black {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+    height: auto;
+    width: 80vw;
+  }
+
+  body {
+    height: auto;
+  }
+
+  .block {
+    width: 80vw;
+    height: 70vw;
+  }
+}
