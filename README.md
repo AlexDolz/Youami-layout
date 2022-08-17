@@ -1,6 +1,6 @@
 # TelRan-School
 
-# FrontEnd Project
+# FrontEnd Homework
 
 # Youami-layout
 
